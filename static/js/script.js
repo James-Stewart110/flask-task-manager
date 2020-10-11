@@ -1,14 +1,16 @@
 // Navbar
 $(document).ready(function(){
-    $('.sidenav').sidenav({edge: 'right'});
+    $('.sidenav').sidenav({edge: 'right'}); // Navbar
+    $('.collapsible').collapsible(); // Accordion
+    $('.tooltipped').tooltip(); //Tooltip
+    $('.datepicker').datepicker({
+        format: 'dd mmmm, yyyy',
+        yearRange: 3,
+        showClearBtn: true,
+        i18n: {
+            done: 'Select'
+        }
+    }); //Datepicker
   });
 
-// Accordion
-$(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
 
-// Tooltip
-  $(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
