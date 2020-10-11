@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav({edge: 'right'}); // Navbar
     $('.collapsible').collapsible(); // Accordion
     $('.tooltipped').tooltip(); //Tooltip
+    $('select').formSelect(); //Select
     $('.datepicker').datepicker({
         format: 'dd mmmm, yyyy',
         yearRange: 3,
